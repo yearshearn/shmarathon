@@ -1,0 +1,18 @@
+{
+  "name": "playWright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.34.3"
+  },
+  "dependencies": {
+    "playwright": "^1.34.3"
+  }
+}
