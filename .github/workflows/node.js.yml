@@ -38,6 +38,6 @@ jobs:
       # 运行脚本
       - name: 运行脚本
         run: |
-          COOKIE='${{ secrets.COOKIE }}' TOKEN='${{ secrets.TOKEN }}' SERVERID='${{ secrets.SERVERID }}' npm start
+          IPHONE='${{ secrets.IPHONE }}' PASSWORD='${{ secrets.PASSWORD }}' SERVERID='${{ secrets.SERVERID }}' npm start
         env:
           CI: true
