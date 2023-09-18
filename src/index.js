@@ -8,10 +8,10 @@ const { chromium } = require('playwright');
   const page = await context.newPage();
   await page.goto('https://passport.shang-ma.com/#/login?redirect_url=https%3A%2F%2Fwww.shmarathon.com%2F#/user/info');
   await page.getByPlaceholder('邮箱/手机号').click();
-  await page.getByPlaceholder('邮箱/手机号').fill('13251953746');
+  await page.getByPlaceholder('邮箱/手机号').fill(process.env.IPHONE);
   await page.getByPlaceholder('密码').click();
-  await page.getByPlaceholder('密码').fill('ZYH11zyh');
-  console.log('点击登录======================')
+  await page.getByPlaceholder('密码').fill(process.env.PASSWORD);
+  console.log('点击登录======================'，process.env.IPHONE)
   await page.getByRole('button', { name: '登录' }).click();
   await page.getByRole('menuitem', { name: '我的积分' }).click();
   console.log('准备点击签到按扭======================')
