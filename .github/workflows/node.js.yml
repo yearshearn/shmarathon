@@ -21,6 +21,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 16
+      # npx 安装
+      - name: npx playwright install
+        run: |
+          npx playwright install
+        env:
+          CI: true
 
       # npm install
       - name: npm install
