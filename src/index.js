@@ -11,7 +11,7 @@ const { chromium } = require('playwright');
   await page.getByPlaceholder('邮箱/手机号').fill(process.env.IPHONE);
   await page.getByPlaceholder('密码').click();
   await page.getByPlaceholder('密码').fill(process.env.PASSWORD);
-  console.log('点击登录======================'，process.env.IPHONE)
+  console.log('点击登录======================',process.env.IPHONE)
   await page.getByRole('button', { name: '登录' }).click();
   await page.getByRole('menuitem', { name: '我的积分' }).click();
   console.log('准备点击签到按扭======================')
